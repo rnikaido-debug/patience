@@ -1,0 +1,46 @@
+project:
+  type: book
+
+book:
+  title: "忍耐について"
+  chapters:
+    - index.qmd
+    - 01_on-patience.qmd 
+    - 02_defining-patience.qmd
+    - 03_necessity-of-patience.qmd
+    - 04_trials-and-ease.qmd
+    - 05_merits-of-patience.qmd
+    - 06_types-of-deeds.qmd
+    - 07_fard-patience.qmd
+    - 08_other-patience.qmd
+    - 09_levels-of-patience.qmd
+    - 10_good-and-bad-patience.qmd
+    - references.qmd
+
+lang: ja                     # Sets the document language to Japanese
+  
+format:
+  pdf:
+    pdf-engine: typst
+    mainfont: "Hiragino Mincho ProN"
+    papersize: a4
+    toc: true
+    number-sections: true
+    linkcolor: "#0000ee"
+    include-before-body:
+      text: |
+        #show heading.where(level:1): it=> { 
+          pagebreak(weak: true)
+          it
+        } 
+        #show quote: it => rect( 
+          width: 100%,
+          inset: 1em,
+          fill: luma(245),
+          stroke: (left: 4pt + gray),
+          radius: 2pt,
+          it
+        )
+        
+       
+
